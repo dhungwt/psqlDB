@@ -62,3 +62,10 @@ FROM students
 INNER JOIN teachers ON students.teacherID = teachers.id 
 INNER JOIN rooms ON rooms.teacherID = teachers.id
 WHERE rooms.id = 3; 
+
+SELECT guardians.id, guardians.firstName, guardians.lastName, students.id, students.firstName, students.lastName, rooms.id, teachers.firstName, teachers.lastName
+FROM guardians
+INNER JOIN students ON students.id = guardians.student_id 
+INNER JOIN teachers ON students.teacherID = teachers.id
+INNER JOIN rooms ON rooms.teacherID = teachers.id
+WHERE rooms.id = 2; 
