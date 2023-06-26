@@ -4,7 +4,7 @@ const pool = new Pool ({
     port: 5432,
     database: "dbtest",
     user: "dianahung",
-    password: "B1ng0"
+    password: "antonio"
 
 
 }); //creates connection
