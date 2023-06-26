@@ -50,3 +50,9 @@ values
 ('Bernardo', 'Garcia', 2),
 ('Yaeji', 'Park', 3),
 ('Hortense', 'Webb', 4);
+
+SELECT students.id, students.firstName, students.lastName, students.teacherID
+FROM students
+INNER JOIN teachers
+ON students.teacherID = teachers.id 
+WHERE teachers.id = 1;
